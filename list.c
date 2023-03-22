@@ -43,14 +43,14 @@ void * firstList(List * list) {
 }
 
 void * nextList(List * list) {
-  list->current->next = list->current;
+  list->current= list->current->next;
     return (list->current->data);
 }
 
 void * lastList(List * list) {
   if(!list->tail) return NULL;
   list->current=list->tail;
-    return (list->current->data);
+    return (list->tail->data);
 }
 
 void * prevList(List * list) {
