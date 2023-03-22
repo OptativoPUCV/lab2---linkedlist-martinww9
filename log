@@ -275,3 +275,18 @@ Wed 22 Mar 2023 02:06:58 PM UTC:
  tests:  2|5
 total_score: 15/70
 c32f8b3
+Wed 22 Mar 2023 02:08:00 PM UTC: 
+ list.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+list.c: In function ‘nextList’:
+list.c:47:26: error: ‘list->current’ is a pointer; did you mean to use ‘->’?
+   47 |     return (list->current.data);
+      |                          ^
+      |                          ->
+list.c:48:1: error: control reaches end of non-void function [-Werror=return-type]
+   48 | }
+      | ^
+cc1: all warnings being treated as errors
+Compilation failed
+542ad37
