@@ -24,3 +24,14 @@ list.c:41:7: error: expected identifier or ‘(’ before ‘->’ token
       |       ^~
 Compilation failed
 b4d7419
+Wed 22 Mar 2023 01:31:45 PM UTC: 
+ list.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+test.c: In function ‘firstList’:
+list.c:40:17: error: ‘node’ is used uninitialized [-Werror=uninitialized]
+   40 |   Node * node = createNode(node);
+      |                 ^~~~~~~~~~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+f17a134
