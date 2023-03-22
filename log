@@ -94,3 +94,27 @@ list.c:48:3: note: each undeclared identifier is reported only once for each fun
 cc1: all warnings being treated as errors
 Compilation failed
 6720fd9
+Wed 22 Mar 2023 01:39:14 PM UTC: 
+ list.c | 8 +++-----
+ 1 file changed, 3 insertions(+), 5 deletions(-)
+In file included from test.c:5:
+list.c: In function ‘firstList’:
+list.c:41:21: error: ‘List’ {aka ‘struct List’} has no member named ‘first’
+   41 |   list->current=list->first;
+      |                     ^~
+list.c:42:17: error: ‘List’ {aka ‘struct List’} has no member named ‘first’
+   42 |     return (list->first->data);
+      |                 ^~
+list.c: In function ‘nextList’:
+list.c:46:3: error: ‘node’ undeclared (first use in this function); did you mean ‘Node’?
+   46 |   node = createNode(node);
+      |   ^~~~
+      |   Node
+list.c:46:3: note: each undeclared identifier is reported only once for each function it appears in
+list.c: In function ‘firstList’:
+list.c:43:1: error: control reaches end of non-void function [-Werror=return-type]
+   43 | }
+      | ^
+cc1: all warnings being treated as errors
+Compilation failed
+a81fd6b
