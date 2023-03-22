@@ -40,6 +40,7 @@ void * firstList(List * list) {
   Node * node = NULL;
   node = createNode(node);
   list->head = node->data;
+  list->current = list->head;
     return node;
 }
 
