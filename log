@@ -14,3 +14,13 @@ Wed 22 Mar 2023 01:29:07 PM UTC:
  tests:  1|5
 total_score: 10/70
 e7cf552
+Wed 22 Mar 2023 01:31:21 PM UTC: 
+ list.c | 5 +++--
+ 1 file changed, 3 insertions(+), 2 deletions(-)
+In file included from test.c:5:
+list.c: In function ‘firstList’:
+list.c:41:7: error: expected identifier or ‘(’ before ‘->’ token
+   41 |   List->head = node->data;
+      |       ^~
+Compilation failed
+b4d7419
