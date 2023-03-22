@@ -53,3 +53,22 @@ Wed 22 Mar 2023 01:33:31 PM UTC:
  tests:  1|5
 total_score: 10/70
 82d8cb0
+Wed 22 Mar 2023 01:35:10 PM UTC: 
+ list.c | 5 ++++-
+ 1 file changed, 4 insertions(+), 1 deletion(-)
+In file included from test.c:5:
+list.c: In function ‘firstList’:
+list.c:41:10: error: too few arguments to function ‘createNode’
+   41 |   node = createNode();
+      |          ^~~~~~~~~~
+list.c:22:8: note: declared here
+   22 | Node * createNode(void * data) {
+      |        ^~~~~~~~~~
+list.c: In function ‘nextList’:
+list.c:48:3: error: ‘node’ undeclared (first use in this function); did you mean ‘Node’?
+   48 |   node = createNode(node);
+      |   ^~~~
+      |   Node
+list.c:48:3: note: each undeclared identifier is reported only once for each function it appears in
+Compilation failed
+3579bae
