@@ -400,3 +400,19 @@ Thu 23 Mar 2023 06:09:19 PM UTC:
  tests:  9|3
 total_score: 35/70
 4a65c0f
+Thu 23 Mar 2023 06:52:00 PM UTC: 
+ list.c | 10 +++++++---
+ 1 file changed, 7 insertions(+), 3 deletions(-)
+In file included from test.c:5:
+list.c: In function ‘pushFront’:
+list.c:68:20: error: ‘node’ undeclared (first use in this function); did you mean ‘Node’?
+   68 |       list->tail = node P;
+      |                    ^~~~
+      |                    Node
+list.c:68:20: note: each undeclared identifier is reported only once for each function it appears in
+list.c:68:24: error: expected ‘;’ before ‘P’
+   68 |       list->tail = node P;
+      |                        ^~
+      |                        ;
+Compilation failed
+b4e6c39
